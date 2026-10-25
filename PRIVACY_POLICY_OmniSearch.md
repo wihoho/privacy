@@ -1,114 +1,81 @@
 # OmniSearch Privacy Policy
 
-**Last Updated: July 8, 2025**
+**Last Updated: October 25, 2026**
 
 ## Overview
 
-OmniSearch is a Chrome extension that provides quick search shortcuts for popular websites directly from your browser's address bar. We are committed to protecting your privacy and being transparent about our data practices.
+OmniSearch is a Chrome extension that lets you search websites straight from Chrome's address bar with short keywords (type `os`, a keyword and your search), and manage those shortcuts in a sidebar. This policy explains what OmniSearch does and does not do with your data.
 
 ## Data Collection
 
-**We do not collect any personal data.** OmniSearch operates entirely within your browser and does not transmit any information to external servers.
+**We do not collect any personal data.** OmniSearch has no servers of its own and sends nothing to the developer.
 
 ### What We Don't Collect
 
 - Personal information (name, email, address, etc.)
-- Browsing history or website visits
+- Browsing history or the pages you visit
+- The content of web pages
 - Search queries or search terms
-- User behavior or analytics data
-- Device information or identifiers
-- Location data
+- Usage analytics, device identifiers or location
 - Any form of tracking data
 
 ## Data Storage
 
-### Local Storage Only
+OmniSearch stores the following in Chrome's built-in extension storage (`chrome.storage.sync`):
 
-OmniSearch stores the following data locally in your browser using Chrome's built-in storage API:
+- **Your shortcuts**: the built-in and custom shortcuts, their keywords and search URLs, and whether each one is on or off
+- **Advanced shortcut settings**: the page address, input box selector and button selector you enter for an advanced shortcut
+- **Preferences**: for example whether you have seen the welcome page
 
-- **Search shortcuts configuration**: Your enabled/disabled shortcuts and custom shortcuts you create
-- **User preferences**: Settings like first-time user status
-- **Custom search URLs**: Any custom search shortcuts you add
+If Chrome sync is turned on, Chrome syncs these settings across your own Chrome browsers. That is handled by Google Chrome and covered by Google's privacy policy. The developer has no access to it.
 
-### Chrome Sync Storage
+## How OmniSearch Works With Websites
 
-If you have Chrome sync enabled in your browser, your OmniSearch settings may sync across your Chrome browsers on different devices. This is handled entirely by Google Chrome's sync infrastructure and is subject to Google's privacy policy.
+### Searches
 
-**Important**: We do not have access to your Chrome sync data. The syncing is handled automatically by Chrome itself.
+When you search with a shortcut, OmniSearch builds the search address (for example `https://www.youtube.com/results?search_query=cats`) and opens it in a new tab. What happens on that site is covered by that site's privacy policy. OmniSearch does not record or monitor your searches.
 
-## Data Usage
+### Advanced shortcuts
 
-The data stored by OmniSearch is used solely to:
+For an advanced shortcut that you set up yourself, OmniSearch opens the page you chose, types your search into the input box you specified and clicks the button you specified. It does this only on that page and only when you run the shortcut. It does not read or send anything back from the page.
 
-- Remember your search shortcut preferences
-- Provide custom search functionality you configure
-- Maintain your settings across browser sessions
+### The sidebar
 
-## Third-Party Services
+The sidebar for managing your shortcuts can open on whatever page you are viewing (toolbar icon or `Ctrl+Shift+S` / `Cmd+Shift+S`). For that, OmniSearch's script is present on web pages, but it only shows the sidebar when you open it and does not read, collect or transmit page content.
 
-### Search Redirections
+### Website icons
 
-When you use OmniSearch to search a website (e.g., YouTube, Amazon), you are redirected to that website's search page. This redirection is subject to the privacy policy of the destination website.
-
-**We do not track or monitor these redirections.** OmniSearch simply constructs the search URL and tells your browser to navigate to it.
-
-### Website Favicons
-
-OmniSearch may load website favicons (small icons) from external websites to display in the settings interface. These requests are made directly by your browser and are not tracked by us.
+The sidebar shows small website icons (favicons) loaded directly by your browser from the websites themselves or from Google's favicon service. These requests are not tracked by OmniSearch.
 
 ## Permissions Explanation
 
-OmniSearch requests the following Chrome permissions:
-
-- **`storage`**: To save your shortcuts and preferences locally
-- **`activeTab`**: To open search results in your current tab when requested
-
-We request only the minimum permissions necessary for the extension to function.
+- **`storage`**: saves your shortcuts and preferences as described above.
+- **`scripting`**: adds OmniSearch's own sidebar script to the current tab when you open the sidebar on a tab that was already open before OmniSearch was installed or updated.
+- **Access to websites (`<all_urls>`)**: lets the sidebar open on any page you are viewing, and lets an advanced shortcut type your search into the site you set it up for. OmniSearch does not read, collect or transmit page content.
+- **`omnibox` keyword `os`**: lets you search from the address bar.
 
 ## Data Security
 
-- All data is stored locally in your browser
-- No data transmission to external servers
-- No user accounts or authentication required
-- No cookies or tracking mechanisms used
+- Your data stays in Chrome's own storage
+- No data is sent to the developer or any third party
+- No accounts, cookies, ads or tracking
 
 ## Children's Privacy
 
-OmniSearch does not collect any data from users of any age. The extension is safe for use by children as it operates entirely locally and does not collect personal information.
-
-## Changes to Privacy Policy
-
-We may update this privacy policy from time to time. Any changes will be reflected in the "Last Updated" date at the top of this policy. Continued use of OmniSearch after changes constitutes acceptance of the updated policy.
+OmniSearch does not collect data from anyone, including children.
 
 ## Data Deletion
 
-To delete all OmniSearch data:
+To delete all OmniSearch data, remove the extension at `chrome://extensions/`. Chrome deletes OmniSearch's stored shortcuts and settings when the extension is removed.
 
-1. **Remove the extension**: Go to `chrome://extensions/`, find OmniSearch, and click "Remove"
-2. **Clear storage manually**: Use the debug console or Chrome's developer tools to clear extension storage
+## Changes to This Policy
 
-All OmniSearch data will be permanently deleted when you remove the extension.
+We may update this policy. Changes will be shown by the "Last Updated" date above.
 
-## Contact Information
+## Contact
 
-If you have questions about this privacy policy or OmniSearch's data practices:
-
-- **GitHub Issues**: [https://github.com/yourusername/search-extension/issues](https://github.com/yourusername/search-extension/issues)
-- **Email**: [your-email@example.com]
-
-## Compliance
-
-This privacy policy complies with:
-
-- Chrome Web Store Developer Program Policies
-- General Data Protection Regulation (GDPR) principles
-- California Consumer Privacy Act (CCPA) principles
+Questions about this policy or OmniSearch's data practices: open an issue at [https://github.com/wihoho/search-extension/issues](https://github.com/wihoho/search-extension/issues).
 
 ## Summary
 
-**In simple terms**: OmniSearch is a privacy-focused extension that works entirely in your browser. We don't collect, store, or transmit any of your personal data. Your search shortcuts and preferences stay on your device.
-
----
-
-**OmniSearch Team**  
-*Building productivity tools that respect your privacy*
+**In simple terms**: OmniSearch keeps your shortcuts in your own Chrome, opens the searches you ask for, and does not collect, read or send your data.
