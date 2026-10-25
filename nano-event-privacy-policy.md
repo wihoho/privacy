@@ -1,59 +1,57 @@
-# Privacy Policy for NanoEvent - AI Calendar Assistant
+# Privacy Policy for NanoEvent
 
-**Last Updated**: July 25, 2026
+**Last Updated**: October 25, 2026
 
 ## Overview
 
-NanoEvent ("we", "our", or "the extension") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect information when you use our Chrome extension. NanoEvent is a privacy-first utility designed to extract event details from web pages, text selection, and images, and format them for calendar export.
+NanoEvent ("we", "our", or "the extension") turns text and images you select into calendar events. This policy explains what the extension sends, where it goes, and what it does not do.
 
-## Information We Collect & Process
+## What NanoEvent processes
 
-### Content You Choose to Process
-- **Selected Text & Content**: When you select text or an image on a webpage and choose "Extract Event with NanoEvent", the extension temporarily accesses that content to parse dates, times, locations, and titles.
-- **Image Content**: If you select an image (such as an event flyer), the extension processes the image data to perform text extraction (OCR).
+- **Text you select**: when you highlight text and choose "Extract Event with NanoEvent", that text is used to find the event's title, date, time and location.
+- **Images you select or crop**: when you right-click an image or use the crop tool, that image is used the same way.
 
-### Information We Do NOT Collect
-- We do not collect or store personal identification information.
-- We do not collect or track your browsing history or web activity.
-- We do not access tab content unless you explicitly select it and run the extension action.
-- We do not store your extracted calendar events, emails, or scheduling data on our servers.
+NanoEvent does not read pages you don't extract from.
 
-## How We Use Information
+## Where your content is sent
 
-### Content Processing
-- **Local AI Execution (Default)**: NanoEvent is designed around on-device processing. Whenever possible, date and event extraction is done locally in your browser using Chrome's built-in Gemini Nano model. No data is transmitted to external servers for this local extraction.
-- **Optional Fallback Cloud AI API**: If you choose to configure a fallback provider (such as OpenRouter), the selected text is transmitted to the API endpoint you configure. This data is subject to the terms and privacy policy of that third-party provider (e.g., OpenRouter).
-- **Payment & License Verification**: We use ExtensionPay (ExtPay) to manage subscriptions ($5.99/mo with a free trial). License checks are handled securely via ExtPay's servers, which process billing and trial data.
+NanoEvent reads event details with a cloud AI model (Google Gemini). When you run an extraction, and only then:
 
-### Permissions Usage
-- **activeTab**: Used to access selected text/images on your active page when you trigger the extension action.
-- **contextMenus**: Adds the right-click option "Extract Event with NanoEvent" to webpage context menus.
-- **storage**: Used to store your extension preferences, calendar choice, and optional API keys locally.
-- **downloads**: Used to save generated `.ics` calendar files directly to your machine.
-- **scripting**: Used to run the extraction helper script on the webpage you explicitly trigger it on.
-- **tabs**: Used to open calendar export links (like Google Calendar or Outlook Web) in a new browser tab.
-- **Host Permissions (`https://extensionpay.com/*`, `https://openrouter.ai/*`)**: Used to process payments/subscription status and route optional fallback AI requests.
+1. The selected text or image is sent over HTTPS to the developer's AI server (`aistudio.share.zrok.io`), which passes it to the AI model and returns the event details.
+2. If that server is unavailable, the same request is sent to **OpenRouter** (`openrouter.ai`), which routes it to a Google Gemini model. OpenRouter's handling is covered by its own privacy policy: https://openrouter.ai/privacy
 
-## Data Sharing
+Your content is used only to return the event details. The developer does not store it, and it is not used for advertising or any other purpose.
 
-- **ExtensionPay**: Security token and subscription identifier are shared with ExtensionPay for license validation.
-- **No Third-Party Sharing**: We do not sell, rent, or share your data with advertisers, third-party brokers, or anyone else. 
+## What we do NOT collect
 
-## Data Security
+- No account, name, email address or other personal identification.
+- No browsing history, analytics or tracking.
+- No storage of your events, emails or schedules on any server.
+- No sale or sharing of data with advertisers or data brokers.
 
-- All configuration data, API keys, and settings are stored locally on your device using Chrome's secure storage API.
-- All network communications (such as payment verification or optional fallback API calls) are encrypted using HTTPS.
+## Permissions
 
-## Your Rights and Controls
+- **activeTab**: reads the text or image you select on the current tab when you run the extension.
+- **contextMenus**: adds "Extract Event with NanoEvent" to the right-click menu.
+- **storage**: saves your preferences (such as the theme) in your browser.
+- **scripting**: runs the selection and crop helper on the page where you start an extraction.
+- **Host permissions** (`https://aistudio.share.zrok.io/*`, `https://openrouter.ai/*`): send the extraction request to the AI endpoints described above.
 
-- You have full control over when the extension accesses page content by initiating the highlight or right-click action.
-- You can uninstall the extension or revoke any permissions at any time through Chrome's extension manager.
-- You can clear your API key settings or reset settings inside the extension popup options.
+Calendar export happens in your browser: Google Calendar and Outlook links open in a new tab, and .ics files are created locally and downloaded.
 
-## Changes to Privacy Policy
+## Payments
 
-We may update this Privacy Policy occasionally. When we do, we will update the "Last Updated" date at the top of this document.
+NanoEvent is free. It has no subscriptions, trials or payment processing.
 
----
+## Your choices
 
-**Summary**: NanoEvent processes text and image selections locally using on-device AI. We do not track you, collect personal data, or sell your information. Subscription billing is handled securely via ExtensionPay, and optional cloud fallbacks are fully controlled by you.
+- Nothing is sent unless you run an extraction.
+- You can remove the extension or its permissions at any time in Chrome's extension settings.
+
+## Changes
+
+If this policy changes, the "Last Updated" date above will change too.
+
+## Contact
+
+Questions or requests: https://github.com/wihoho/privacy/issues
