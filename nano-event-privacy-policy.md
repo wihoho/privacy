@@ -35,7 +35,7 @@ Your content is used only to return the event details. The developer does not st
 - **contextMenus**: adds "Extract Event with NanoEvent" to the right-click menu.
 - **storage**: saves your preferences (such as the theme) in your browser.
 - **scripting**: runs the selection and crop helper on the page where you start an extraction.
-- **Host permissions** (`https://aistudio.share.zrok.io/*`, `https://openrouter.ai/*`): send the extraction request to the AI endpoints described above.
+- **Host permission** (`https://openrouter.ai/*`): sends the extraction request to the fallback AI endpoint described above.
 
 Calendar export happens in your browser: Google Calendar and Outlook links open in a new tab, and .ics files are created locally and downloaded.
 
