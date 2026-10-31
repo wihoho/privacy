@@ -1,8 +1,8 @@
 # OmniSearch Privacy Policy
 
-**Last updated: October 27, 2026**
+**Last updated: October 31, 2026**
 
-OmniSearch is a Chrome extension that lets you search websites from Chrome's address bar with short keywords. It has no servers, no accounts, no ads and no analytics. The developer never receives any of your data.
+OmniSearch is a Chrome extension that lets you search websites from Chrome's address bar with short keywords. It has no accounts, no ads and no tracking. The developer never receives your searches, shortcuts or browsing data; the only thing OmniSearch sends is the anonymous counts described below.
 
 ## What OmniSearch stores
 
@@ -38,9 +38,13 @@ OmniSearch does not run on the pages you visit otherwise.
 
 Remove the extension from `chrome://extensions` and all OmniSearch data is deleted. To clear only the shortcuts, open the OmniSearch panel and choose **Restore default shortcuts** from the menu, or delete them one by one.
 
+## Anonymous usage counts
+
+So the developer can tell whether OmniSearch works for people, it sends a small anonymous report to `extstats.share.zrok.io` when it is installed, when you run a search through a shortcut, and when an error happens. A report contains only the extension's public ID and version, the event, and for errors a shortened error message with file names, web addresses, numbers and quoted text removed. It never contains your searches, keywords, shortcuts or the sites you visit, or any identifier for you or your browser. The server keeps daily totals only and doesn't store IP addresses.
+
 ## Children
 
-OmniSearch collects no data from anyone, including children.
+OmniSearch collects no personal data from anyone, including children.
 
 ## Changes
 

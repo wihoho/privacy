@@ -1,6 +1,6 @@
 # Privacy Policy for NanoEvent
 
-**Last Updated**: October 25, 2026
+**Last Updated**: October 31, 2026
 
 ## Overview
 
@@ -22,10 +22,14 @@ NanoEvent reads event details with a cloud AI model (Google Gemini). When you ru
 
 Your content is used only to return the event details. The developer does not store it, and it is not used for advertising or any other purpose.
 
+## Anonymous usage counts
+
+So the developer can tell whether NanoEvent works for people, it sends a small anonymous report to `extstats.share.zrok.io` when it is installed, when you send an event to Google Calendar, and when an error happens. A report contains only the extension's public ID and version, the event, and for errors a shortened error message with file names, web addresses, numbers and quoted text removed. It never contains the text or images you select, event details, your emails or calendar, or any identifier for you or your browser. The server keeps daily totals only and doesn't store IP addresses.
+
 ## What we do NOT collect
 
 - No account, name, email address or other personal identification.
-- No browsing history, analytics or tracking.
+- No browsing history or tracking. The only usage data are the anonymous counts above.
 - No storage of your events, emails or schedules on any server.
 - No sale or sharing of data with advertisers or data brokers.
 
