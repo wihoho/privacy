@@ -21,4 +21,9 @@ details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointe
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
 .card{display:grid;gap:8px;text-decoration:none;color:var(--fg)}.card .row{display:flex;gap:10px;align-items:center;font-size:18px}.card .row img{border-radius:6px}
 .card .small{color:var(--muted)}
+.guide{max-width:760px}.guide h1{text-align:left;margin-top:24px}.guide h3{margin:0 0 4px;font-size:18px}
+.answer{background:var(--soft);border-left:4px solid var(--accent);border-radius:8px;padding:14px 16px;margin:8px 0 20px}
+.steps{padding-left:22px}.steps li{margin:0 0 14px}.steps p{margin:0;color:var(--fg)}
+.guide-list{list-style:none;padding:0}.guide-list li{margin:0 0 18px}
+.guides-links{columns:2;gap:24px}@media(max-width:640px){.guides-links{columns:1}}
 footer{text-align:center;color:var(--muted);font-size:14px;padding:32px 20px;border-top:1px solid var(--line)}
