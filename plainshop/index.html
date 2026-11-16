@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PlainShop – Privacy Policy</title><style>
+:root{color-scheme:light dark;--fg:#1b1b1b;--muted:#6e6a63;--bg:#eef3f1;--line:#d4dcd9;--accent:#1f6f70}
+@media(prefers-color-scheme:dark){:root{--fg:#f1ece2;--muted:#a9a398;--bg:#161817;--line:#3a3d3c;--accent:#7ccfd0}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 16px 64px} h1{font-size:28px;line-height:1.2;margin:0 0 6px} h2{font-size:18px;margin:28px 0 8px}
+.muted{color:var(--muted)} a{color:var(--accent)} li{margin:4px 0} header{display:flex;gap:12px;align-items:center;margin-bottom:18px}
+header img{width:44px;height:44px;border-radius:10px}
+</style></head><body><main><header><img src="icon.png" alt=""><div><h1>PlainShop privacy policy</h1><div class="muted">Last updated November 16, 2026</div></div></header>
+<p>This policy covers the <b>PlainShop</b> Android app (“PlainShop”), a sales and inventory book for small shops. In short: your records are stored on your phone. They leave it only when you share or save a file, or when you turn on the optional <b>Sync between phones</b>, and then they are encrypted on your phone first. PlainShop has no account, no ads, no analytics and no tracking, and we never sell or share your data.</p>
+<h2>Information the app handles</h2><ul><li>Items you enter: names, units, sale and cost prices, stock movements and low-stock alerts.</li><li>Sales: what was sold, quantities, prices, discounts, notes, customer names you type for credit sales, and payments.</li><li>Expenses and owner drawings, your shop name and currency, and phone settings (theme).</li></ul>
+<p>All of this is stored on your phone, in the app's private storage.</p>
+<h2>Sync between phones (optional, off by default)</h2>
+<p>If you turn on sync, PlainShop makes a shop code on your phone. To reach your other phones, your shop's records (the information listed above) are sent over HTTPS to our sync server, PlainAPI, which runs on the developer's own computer. Before anything is sent, each batch of records is encrypted on your phone with AES-256-GCM using a key made from your shop code. The code itself is never sent: the server only sees a name derived from it by a one-way hash, the time of each upload and the size of the encrypted data. We cannot read your records.</p>
+<p>Anyone who has your shop code can read and change your shop's records, so share it only with your own phones and people you trust. If the code got into the wrong hands, use “Make a new code” in the app. If you turn sync off on a phone, that phone keeps its data and stops sending. To have the encrypted records deleted from the server, contact us (below) and we will delete them. Sync never blocks the app: when the server can't be reached, everything keeps working on your phone.</p>
+<h2>Sharing, exports and backups</h2><p>Your data also leaves your phone when you choose to share or save a file: a profit and loss report or receipt (PDF), sales, stock or expenses (CSV), or a backup file. It goes only to the app or place you pick in the system share sheet or save dialog. These files are not encrypted, so keep them somewhere you trust. Restoring a backup reads only the file you pick.</p>
+<h2>Permissions</h2><p>PlainShop asks only for internet access, which is used solely for the optional sync. Files are saved and opened through the system's own dialogs.</p>
+<h2>Storage and deletion</h2><p>Settings → “Erase this phone's data” deletes all of PlainShop's records from the phone and turns sync off there. Uninstalling the app also removes its data from the phone. Linked phones keep their own copy.</p>
+<h2>What we don't do</h2><ul><li>We don't sell or transfer user data to third parties.</li><li>We don't show ads or use advertising IDs.</li><li>We don't use analytics or crash-reporting services.</li><li>We never hold your records back for payment.</li></ul>
+<h2>Children</h2><p>The app is not directed at children under 13 and does not knowingly collect information from anyone.</p>
+<h2>Changes</h2><p>If this policy changes, the updated version will be posted on this page with a new date.</p>
+<h2>Contact</h2><p>Questions or deletion requests: <a href="https://github.com/wihoho/privacy/issues">open an issue on GitHub</a>.</p>
+</main></body></html>
