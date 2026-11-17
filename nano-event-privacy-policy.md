@@ -1,6 +1,6 @@
 # Privacy Policy for NanoEvent
 
-**Last Updated**: October 31, 2026
+**Last Updated**: November 17, 2026
 
 ## Overview
 
@@ -8,19 +8,20 @@ NanoEvent ("we", "our", or "the extension") turns text and images you select int
 
 ## What NanoEvent processes
 
-- **Text you select**: when you highlight text and choose "Extract Event with NanoEvent", that text is used to find the event's title, date, time and location.
-- **Images you select or crop**: when you right-click an image or use the crop tool, that image is used the same way.
+- **Text you select**: when you highlight text and choose "Extract Event with NanoEvent", that text is used to find the event's title, date, time and location. So that an event can be named and dated correctly when you select only part of it (for example just "Thursday 7:15"), NanoEvent also includes the page's title, its web address host (such as `example.com`, not the full address), its language, and up to about 300 characters of text just before and after your selection.
+- **Images you select or crop**: when you right-click an image or use the crop tool, that image is used the same way, together with the page's title, host and language.
+- **Your time zone, language setting and today's date**, so that times like "3 pm PST" and dates like 12/7 are read correctly.
 
-NanoEvent does not read pages you don't extract from.
+NanoEvent does not read pages you don't extract from. Text you paste into the NanoEvent popup is sent on its own, without anything from the open page.
 
 ## Where your content is sent
 
 NanoEvent reads event details with a cloud AI model (Google Gemini). When you run an extraction, and only then:
 
-1. The selected text or image is sent over HTTPS to the developer's AI server (`aistudio.share.zrok.io`), which passes it to the AI model and returns the event details.
+1. The content described above is sent over HTTPS to the developer's AI server (`aistudio.share.zrok.io`), which passes it to the AI model and returns the event details.
 2. If that server is unavailable, the same request is sent to **OpenRouter** (`openrouter.ai`), which routes it to a Google Gemini model. OpenRouter's handling is covered by its own privacy policy: https://openrouter.ai/privacy
 
-Your content is used only to return the event details. The developer does not store it, and it is not used for advertising or any other purpose.
+Your content is used only to return the event details and to check and improve how well NanoEvent reads them. To do that, the developer's AI server keeps the request text (images are not kept) and the answer for up to 14 days, after which they are deleted automatically. It is not linked to any account or identifier for you, and it is not used for advertising or any other purpose.
 
 ## Anonymous usage counts
 
@@ -30,7 +31,7 @@ So the developer can tell whether NanoEvent works for people, it sends a small a
 
 - No account, name, email address or other personal identification.
 - No browsing history or tracking. The only usage data are the anonymous counts above.
-- No storage of your events, emails or schedules on any server.
+- No storage of your events, emails or schedules on any server, apart from the 14-day request log described above.
 - No sale or sharing of data with advertisers or data brokers.
 
 ## Permissions
