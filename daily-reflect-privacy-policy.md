@@ -1,6 +1,6 @@
 # Privacy Policy for Daily Reflect
 
-**Last Updated**: October 13, 2026
+**Last Updated**: November 18, 2026
 
 ## Overview
 
@@ -14,6 +14,7 @@ Daily Reflect ("we", "our", or "the app") is a journaling app. You capture thoug
 
 ### Data Sent Off Your Device
 - **AI Diary Generation**: When the app creates a diary entry, the text of that day's thoughts is sent over HTTPS to an AI service operated by us. That service runs behind a zrok tunnel (zrok.io, operated by NetFoundry) and forwards the text to Google's Gemini API to generate the entry and reflection. The text is used only to produce your entry. We do not sell it, use it for advertising, or keep it after the request completes. Google processes these requests under the [Gemini API Additional Terms of Service](https://ai.google.dev/gemini-api/terms).
+- **Install ID**: Each AI request carries a random ID that the app creates on first use. It is not linked to your name, account or device identifiers, and is used only to apply a fair daily limit of AI requests per installation. If the AI service can't be reached, or the daily limit is used up, the entry is saved on your device in your own words and nothing is sent.
 - **Voice Input**: Dictation uses your device's speech recognition service (usually provided by Google). Audio is handled by that service under its own privacy policy. Daily Reflect does not record, store, or upload audio itself.
 - **Reports of AI-Generated Content**: If you report an AI-generated entry, we receive your selected reason, any details you add, and up to 500 characters of the entry and reflection, sent through Formspree (formspree.io), so we can review the report and improve content quality. If a report can't be sent (for example, while offline), it is kept on your device and sent later.
 
