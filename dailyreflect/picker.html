@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Reflect – choose a Google Doc</title>
+<style>html,body{margin:0;height:100%;font:16px/1.5 system-ui,sans-serif;background:#fbf1f1;color:#1b1b1b}
+#msg{padding:24px;text-align:center}</style></head>
+<body><div id="msg">Opening Google Drive…</div>
+<script>
+// Opened inside the Daily Reflect app. The app passes a short-lived Google access token (scope drive.file) in the
+// URL fragment, which never reaches this web server. Picking a doc gives the app access to that one doc only.
+// The key below works only for the Google Picker API and only on this website.
+const KEY = 'AIzaSyCI-zsRP85UVOi0DjtiCwWBwQ1djDy741g';
+const APP_ID = '386072733007';
+const p = new URLSearchParams(location.hash.slice(1));
+history.replaceState(null, '', location.pathname);
+function send(o) { if (window.DailyReflect) DailyReflect.postMessage(JSON.stringify(o)); }
+function fail(e) { document.getElementById('msg').textContent = "Couldn't open Google Drive."; send({error: String(e)}); }
+function start() {
+  try {
+    gapi.load('picker', {callback: () => {
+      const view = new google.picker.DocsView(google.picker.ViewId.DOCUMENTS)
+        .setMimeTypes('application/vnd.google-apps.document')
+        .setMode(google.picker.DocsViewMode.LIST);
+      const picker = new google.picker.PickerBuilder()
+        .addView(view)
+        .setOAuthToken(p.get('token'))
+        .setDeveloperKey(KEY)
+        .setAppId(APP_ID)
+        .setTitle('Choose the doc for your diary')
+        .setSize(window.innerWidth, window.innerHeight)
+        .enableFeature(google.picker.Feature.NAV_HIDDEN)
+        .setCallback((d) => {
+          if (d.action === google.picker.Action.PICKED) send({id: d.docs[0].id, name: d.docs[0].name});
+          else if (d.action === google.picker.Action.CANCEL) send({cancel: true});
+        })
+        .build();
+      picker.setVisible(true);
+      document.getElementById('msg').textContent = '';
+    }, onerror: fail});
+  } catch (e) { fail(e); }
+}
+</script>
+<script src="https://apis.google.com/js/api.js" onload="start()" onerror="fail('load')"></script>
+</body></html>
