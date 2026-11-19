@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily Reflect – Privacy Policy</title><style>
+:root{color-scheme:light dark;--fg:#1c1e22;--muted:#5d6370;--bg:#fff;--line:#e3e6eb;--accent:#2f6df6}
+@media(prefers-color-scheme:dark){:root{--fg:#e9ebf0;--muted:#9aa1b2;--bg:#15171c;--line:#2f3440;--accent:#5b8cff}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 16px 64px} h1{font-size:28px;line-height:1.2;margin:0 0 6px} h2{font-size:18px;margin:28px 0 8px}
+.muted{color:var(--muted)} a{color:var(--accent)} li{margin:4px 0} header{display:flex;gap:12px;align-items:center;margin-bottom:18px}
+header img{width:44px;height:44px;border-radius:10px} .card{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+</style></head><body><main><header><img src="../icon.png" alt=""><div><h1>Daily Reflect privacy policy</h1></div></header>
+<p><strong>Last Updated</strong>: November 19, 2026</p>
+<h2>Overview</h2>
+<p>Daily Reflect ("we", "our", or "the app") is a journaling app. You capture thoughts during the day by typing or speaking, and the app uses AI to turn them into a diary entry and a short reflection. This Privacy Policy explains what information the app handles, where it goes, and how you control it.</p>
+<h2>Information We Collect &amp; Process</h2>
+<h3>Data Stored Locally on Your Device</h3>
+<ul>
+<li><strong>Thoughts and Diary Entries</strong>: Text you type, the voice notes you record (audio files), and the diary entries, reflections and voice-note transcripts generated from them are stored on your device (a local Isar database and the app's private folder).</li>
+<li><strong>Application Preferences</strong>: Settings such as theme and markdown export folder are saved locally on your device (<code>shared_preferences</code>).</li>
+</ul>
+<h3>Data Sent Off Your Device</h3>
+<ul>
+<li><strong>AI Diary Generation</strong>: Only when a diary entry is written (you tap Create entry or Update entry, or the app writes a past day's entry when you open it), that day's thoughts are sent over HTTPS to an AI service operated by us: the text of typed thoughts, and the audio of voice notes that have not been transcribed yet. That service runs behind a zrok tunnel (zrok.io, operated by NetFoundry) and passes the request to Google's Gemini models, which write the entry, the reflection and a transcript of each voice note. The text and audio are used only to produce your entry. We do not sell them, use them for advertising, or keep them after the request completes. Google processes these requests under the <a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms of Service</a>.</li>
+<li><strong>Install ID</strong>: Each AI request carries a random ID that the app creates on first use. It is not linked to your name, account or device identifiers, and is used only to apply a fair daily limit of AI requests per installation. If the AI service can't be reached, or the daily limit is used up, the entry is saved on your device in your own words and nothing is sent; voice notes then wait on your device until the next time the entry is written.</li>
+<li><strong>Voice Notes</strong>: With your permission, the app uses the microphone only while you record a voice note. The recording stays on your device for playback until you delete the thought; its audio leaves the device only as described under AI Diary Generation.</li>
+<li><strong>Reports of AI-Generated Content</strong>: If you report an AI-generated entry, we receive your selected reason, any details you add, and up to 500 characters of the entry and reflection, sent through Formspree (formspree.io), so we can review the report and improve content quality. If a report can't be sent (for example, while offline), it is kept on your device and sent later.</li>
+</ul>
+<h3>Data You Choose to Export or Share</h3>
+<ul>
+<li><strong>Markdown Export</strong>: If you enable export, entries are written to a folder you choose on your device. What happens to them afterwards (for example, if that folder syncs to a cloud service) is under your control.</li>
+<li><strong>Sharing</strong>: If you tap Share on an entry, its text goes to the app you pick through Android's share sheet.</li>
+</ul>
+<h2>What We Don't Do</h2>
+<ul>
+<li>No user accounts or sign-in.</li>
+<li>No advertising, and no analytics or tracking SDKs.</li>
+<li>No sale of personal data.</li>
+</ul>
+<h2>Data Security</h2>
+<p>All network communication from the app uses HTTPS.</p>
+<h2>Data Retention &amp; Deletion</h2>
+<ul>
+<li>You can edit or delete individual thoughts in the app.</li>
+<li>Uninstalling the app deletes all data stored on your device.</li>
+<li>Text sent for AI generation is not retained after the request completes.</li>
+<li>To ask us to delete a content report you submitted, contact us at the address below.</li>
+</ul>
+<h2>Children's Privacy</h2>
+<p>Daily Reflect is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+<h2>Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date.</p>
+<h2>Contact Us</h2>
+<p>If you have questions about this Privacy Policy, contact us at: <strong>wihoho@gmail.com</strong></p></main></body></html>
