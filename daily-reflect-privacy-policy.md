@@ -1,6 +1,6 @@
 # Privacy Policy for Daily Reflect
 
-**Last Updated**: November 18, 2026
+**Last Updated**: November 19, 2026
 
 ## Overview
 
@@ -9,13 +9,13 @@ Daily Reflect ("we", "our", or "the app") is a journaling app. You capture thoug
 ## Information We Collect & Process
 
 ### Data Stored Locally on Your Device
-- **Thoughts and Diary Entries**: Text you type or dictate, along with the diary entries and reflections generated from it, is stored in a local database on your device (Isar).
+- **Thoughts and Diary Entries**: Text you type, the voice notes you record (audio files), and the diary entries, reflections and voice-note transcripts generated from them are stored on your device (a local Isar database and the app's private folder).
 - **Application Preferences**: Settings such as theme and markdown export folder are saved locally on your device (`shared_preferences`).
 
 ### Data Sent Off Your Device
-- **AI Diary Generation**: When the app creates a diary entry, the text of that day's thoughts is sent over HTTPS to an AI service operated by us. That service runs behind a zrok tunnel (zrok.io, operated by NetFoundry) and forwards the text to Google's Gemini API to generate the entry and reflection. The text is used only to produce your entry. We do not sell it, use it for advertising, or keep it after the request completes. Google processes these requests under the [Gemini API Additional Terms of Service](https://ai.google.dev/gemini-api/terms).
-- **Install ID**: Each AI request carries a random ID that the app creates on first use. It is not linked to your name, account or device identifiers, and is used only to apply a fair daily limit of AI requests per installation. If the AI service can't be reached, or the daily limit is used up, the entry is saved on your device in your own words and nothing is sent.
-- **Voice Input**: Dictation uses your device's speech recognition service (usually provided by Google). Audio is handled by that service under its own privacy policy. Daily Reflect does not record, store, or upload audio itself.
+- **AI Diary Generation**: Only when a diary entry is written (you tap Create entry or Update entry, or the app writes a past day's entry when you open it), that day's thoughts are sent over HTTPS to an AI service operated by us: the text of typed thoughts, and the audio of voice notes that have not been transcribed yet. That service runs behind a zrok tunnel (zrok.io, operated by NetFoundry) and passes the request to Google's Gemini models, which write the entry, the reflection and a transcript of each voice note. The text and audio are used only to produce your entry. We do not sell them, use them for advertising, or keep them after the request completes. Google processes these requests under the [Gemini API Additional Terms of Service](https://ai.google.dev/gemini-api/terms).
+- **Install ID**: Each AI request carries a random ID that the app creates on first use. It is not linked to your name, account or device identifiers, and is used only to apply a fair daily limit of AI requests per installation. If the AI service can't be reached, or the daily limit is used up, the entry is saved on your device in your own words and nothing is sent; voice notes then wait on your device until the next time the entry is written.
+- **Voice Notes**: With your permission, the app uses the microphone only while you record a voice note. The recording stays on your device for playback until you delete the thought; its audio leaves the device only as described under AI Diary Generation.
 - **Reports of AI-Generated Content**: If you report an AI-generated entry, we receive your selected reason, any details you add, and up to 500 characters of the entry and reflection, sent through Formspree (formspree.io), so we can review the report and improve content quality. If a report can't be sent (for example, while offline), it is kept on your device and sent later.
 
 ### Data You Choose to Export or Share
