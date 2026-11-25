@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PlainBaby – Privacy Policy</title><style>
+:root{color-scheme:light dark;--fg:#1b1b1b;--muted:#6e6a63;--bg:#f4f2f9;--line:#dcd6ec;--accent:#5b4b9e}
+@media(prefers-color-scheme:dark){:root{--fg:#f1ece2;--muted:#a9a398;--bg:#17161b;--line:#3a3842;--accent:#bfb3e8}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 16px 64px} h1{font-size:28px;line-height:1.2;margin:0 0 6px} h2{font-size:18px;margin:28px 0 8px}
+.muted{color:var(--muted)} a{color:var(--accent)} li{margin:4px 0} header{display:flex;gap:12px;align-items:center;margin-bottom:18px}
+header img{width:44px;height:44px;border-radius:10px}
+</style></head><body><main><header><img src="icon.png" alt=""><div><h1>PlainBaby privacy policy</h1><div class="muted">Last updated November 25, 2026</div></div></header>
+<p>This policy covers the <b>PlainBaby</b> Android app (package com.wihoho.plainbaby), a baby tracker for feeds, sleep, diapers, growth and health notes. In short: your baby's log is stored on your phone. It leaves the phone only if you turn on <b>Family sharing</b>, and then it is <b>encrypted on your phone</b> with your family code before it is sent, so our sync server cannot read it. PlainBaby has no ads, no analytics, no tracking, no accounts, no in-app purchases, and we never sell or share data.</p>
+<h2>Information the app handles</h2><ul>
+<li>Your children's names and birthdays.</li>
+<li>What you log: feeds (breast sides and minutes, bottle amounts, solids), pumping, sleep times, diaper changes, growth measurements (weight, length, head size), medicines, vaccines, milestones, potty training and notes.</li>
+<li>Optionally your caregiver name (for example "Dad"), shown next to what you log.</li>
+<li>Your settings: units and the feed reminder.</li></ul>
+<p>All of this is stored on the phone, in the app's private storage. The app also keeps an automatic daily backup (the last 7 days) in the same private storage.</p>
+<h2>Family sharing (optional, off until you turn it on)</h2>
+<p>When you create or join a family code, the app sends your log over HTTPS to our sync server, PlainAPI, which runs on the developer's own computer, so that the other phones with the same code can show the same log. Before anything is sent, the app compresses the changes and encrypts them on your phone with AES-256-GCM, using a key derived from your family code. The code itself is never sent: the server only sees a one-way hash of it as the address of your family's space. So the server stores only encrypted data plus the time each record changed, and cannot read names, feeds or any other content.</p>
+<p>Anyone who has your family code can read and change your family's log, so share it only with people you trust. Sync never blocks the app: when the server can't be reached, everything keeps working on the phone and catches up later. "Stop syncing on this phone" keeps the log on the phone.</p>
+<h2>Exports and backups</h2><p>The doctor report (PDF), the spreadsheet (CSV) and backup files are made on the phone. They go only where you send them with the share sheet.</p>
+<h2>Permissions</h2><p>Internet (only for the optional Family sharing) and notifications (only for the optional feed reminder, asked for when you turn it on). Restoring a backup uses the phone's own file picker, so the app needs no storage permission. No camera, location, contacts or microphone permissions.</p>
+<h2>Health information</h2><p>PlainBaby is a logging tool. It does not give medical advice or diagnose anything. The data you enter is used only to show it back to you and your family.</p>
+<h2>Storage and deletion</h2><p>Uninstalling the app removes its data from the phone. Deleting an entry in the app also deletes it on every linked phone. To delete your family's encrypted data from the server, contact us (below) and we will delete it; we can't read it, so tell us roughly when you started sharing.</p>
+<h2>Children</h2><p>The app is for parents and caregivers, not for children to use. It holds information that parents enter about their own children and keeps it on their own phones.</p>
+<h2>What we don't do</h2><ul><li>We don't sell or transfer data to third parties.</li><li>We don't show ads or use advertising IDs.</li><li>We don't use analytics or crash-reporting services.</li><li>We can't read your family's synced log, and we don't try to.</li></ul>
+<h2>Changes</h2><p>If this policy changes, the updated version will be posted on this page with a new date.</p>
+<h2>Contact</h2><p>Questions or deletion requests: <a href="https://github.com/wihoho/privacy/issues">open an issue on GitHub</a>.</p>
+</main></body></html>
