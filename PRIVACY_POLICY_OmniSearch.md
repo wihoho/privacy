@@ -1,6 +1,6 @@
 # OmniSearch Privacy Policy
 
-**Last updated: October 31, 2026**
+**Last updated: November 27, 2026**
 
 OmniSearch is a Chrome extension that lets you search websites from Chrome's address bar with short keywords. It has no accounts, no ads and no tracking. The developer never receives your searches, shortcuts or browsing data; the only thing OmniSearch sends is the anonymous counts described below.
 
@@ -52,4 +52,4 @@ If this policy changes, the date at the top will change too.
 
 ## Contact
 
-Questions or problems: [github.com/wihoho/search-extension/issues](https://github.com/wihoho/search-extension/issues)
+Questions or problems: email [tmosby137@gmail.com](mailto:tmosby137@gmail.com), or open an issue at [github.com/wihoho/search-extension/issues](https://github.com/wihoho/search-extension/issues) (issues are public, so please use email for anything personal).

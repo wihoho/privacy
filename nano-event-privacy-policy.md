@@ -27,7 +27,7 @@ Your content is used only to return the event details and to check and improve h
 
 The developer's AI server runs on the developer's own computer. For every extraction it keeps a log entry with the full request and the full answer for 14 days: the text you selected or pasted with its page title, host, language and surrounding text, any image you selected or cropped, and the event details that came back. Each entry also records the time, the app and its version or the AI model used, and the country and network part of your address (never the full IP address). It never keeps API keys or passwords.
 
-The log is kept only to find and fix problems and to improve the quality of results. After 14 days each entry is deleted automatically, and the log is not included in backups. Only the developer can see it, in a private dashboard behind the developer's Google sign-in. It is never sold, shared, used for advertising or used to train AI models. To have your log entries deleted sooner, open an issue at https://github.com/wihoho/privacy/issues.
+The log is kept only to find and fix problems and to improve the quality of results. After 14 days each entry is deleted automatically, and the log is not included in backups. Only the developer can see it, in a private dashboard behind the developer's Google sign-in. It is never sold, shared, used for advertising or used to train AI models. To have your requests deleted sooner, email tmosby137@gmail.com.
 
 ## Anonymous usage counts
 
@@ -65,4 +65,4 @@ If this policy changes, the "Last Updated" date above will change too.
 
 ## Contact
 
-Questions or requests: https://github.com/wihoho/privacy/issues
+Questions or requests: email tmosby137@gmail.com, or open an issue at https://github.com/wihoho/privacy/issues (issues are public, so please use email for anything personal).

@@ -27,7 +27,7 @@ Daily Reflect ("we", "our", or "the app") is a journaling app. You capture thoug
 
 Our AI service runs on the developer's own computer. For every request the app sends to it, the service keeps a log entry with the full request and the full answer for 14 days. For Daily Reflect this includes the text of your thoughts, the audio of your voice notes, the photo copies, and the diary entry, reflection, transcripts and captions that come back. Each entry also records the time, the app and its version or the AI model used, and the country and network part of your address (never the full IP address). It never keeps API keys or passwords.
 
-The log is kept only to find and fix problems and to improve the quality of results. After 14 days each entry is deleted automatically, and the log is not included in backups. Only the developer can see it, in a private dashboard behind the developer's Google sign-in. It is never sold, shared, used for advertising or used to train AI models. To have your log entries deleted sooner, email us at **wihoho@gmail.com**.
+The log is kept only to find and fix problems and to improve the quality of results. After 14 days each entry is deleted automatically, and the log is not included in backups. Only the developer can see it, in a private dashboard behind the developer's Google sign-in. It is never sold, shared, used for advertising or used to train AI models. To have your requests deleted sooner, email tmosby137@gmail.com.
 
 ## What We Don't Do
 - No user accounts or sign-in.
@@ -50,4 +50,4 @@ Daily Reflect is not directed at children under 13, and we do not knowingly coll
 We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date.
 
 ## Contact Us
-If you have questions about this Privacy Policy, contact us at: **wihoho@gmail.com**
+If you have questions about this Privacy Policy, contact us at: **tmosby137@gmail.com**

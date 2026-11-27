@@ -1,5 +1,7 @@
 ## 🔐 **Privacy Policy for AI Prompt Manager**
 
+**Last Updated**: November 27, 2026
+
 ## **Overview**
 
 AI Prompt Manager is committed to protecting your privacy. This Privacy Policy explains how our Chrome extension handles your data and what information we do and do not collect.
@@ -192,13 +194,13 @@ AI Prompt Manager does not knowingly collect any information from children under
 ### **Privacy Questions**
 If you have questions about this privacy policy or our data practices:
 
-**Email:** [Your Support Email]
+**Email:** tmosby137@gmail.com
 **Subject Line:** "AI Prompt Manager - Privacy Question"
 
 ### **Data Requests**
 Since all data is stored locally on your device, you have direct access to all your information through the extension interface. For technical support with data export/import:
 
-**Email:** [Your Support Email]
+**Email:** tmosby137@gmail.com
 **Subject Line:** "AI Prompt Manager - Data Support"
 
 ---

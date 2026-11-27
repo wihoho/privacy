@@ -1,6 +1,6 @@
 # Privacy Policy for tldr.ai Chrome Extension
 
-**Last Updated**: [Current Date]
+**Last Updated**: November 27, 2026
 
 ## Overview
 
@@ -79,7 +79,7 @@ We may update this Privacy Policy occasionally. Changes will be posted with an u
 ## Contact Information
 
 If you have questions about this Privacy Policy, please contact us at:
-[Your contact email]
+tmosby137@gmail.com
 
 ## Compliance
 

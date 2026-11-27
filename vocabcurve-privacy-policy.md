@@ -39,7 +39,7 @@ Our AI gateway and our sync server (PlainAPI) run on the developer's own compute
 
 With sync on, your words stay on our server for sync as described above; the 14-day log is an extra copy that is deleted on its own after 14 days.
 
-The log is kept only to find and fix problems and to improve the quality of results. After 14 days each entry is deleted automatically, and the log is not included in backups. Only the developer can see it, in a private dashboard behind the developer's Google sign-in. It is never sold, shared, used for advertising or used to train AI models. To have your log entries deleted sooner, ask us through the contact link below.
+The log is kept only to find and fix problems and to improve the quality of results. After 14 days each entry is deleted automatically, and the log is not included in backups. Only the developer can see it, in a private dashboard behind the developer's Google sign-in. It is never sold, shared, used for advertising or used to train AI models. To have your requests deleted sooner, email tmosby137@gmail.com.
 
 ## Translations
 
@@ -67,5 +67,5 @@ If this policy changes, the updated version will be posted on this page with a n
 ## Contact
 
 Questions or deletion requests:
-- **Email**: wihoho@gmail.com
+- **Email**: tmosby137@gmail.com
 - **Issues**: https://github.com/wihoho/privacy/issues
