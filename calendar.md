@@ -1,163 +1,92 @@
-# Privacy Policy - Chrome Web Store Listing
-## ChatGPT for Google Calendar Extension
+# Privacy Policy - ChatGPT for Google Calendar
 
-**Last Updated**: Nov 27, 2026
+**Effective date**: 27 November 2026 (version 2.0)
 
----
+## What the extension does
 
-## What This Extension Does
+ChatGPT for Google Calendar turns text you select on a web page into a calendar event. You select text, right-click and choose "Add to calendar". The extension sends the selected text to an AI service, which reads out the title, start and end time and location. You check and edit the event in a small window on the page, then choose Google Calendar, Outlook or an .ics file.
 
-The ChatGPT for Google Calendar extension helps you create calendar events from text you select on webpages. When you highlight text and right-click "Add to calendar," the extension uses AI to extract event details and helps you create a Google Calendar event.
+## What leaves your computer
 
----
+### 1. The text you select, to our AI service
 
-## Information We Collect and Use
+When you click "Add to calendar", the extension sends one request to our AI service at **aistudio.share.zrok.io**. The service runs on the developer's own computer and passes the request to **Google Gemini**. The request contains:
 
-### ✅ What We Process
-- **Selected Text Only**: We only process text that you explicitly highlight and choose to convert to calendar events
-- **Extension Settings**: Your AI provider preference (OpenAI/Gemini), model selection, and API keys (stored locally)
-- **Technical Data**: Basic error logs and performance data (no personal content)
+- the text you selected (if you right-click without a selection, the text is empty), and
+- today's date, so that words like "tomorrow" can be worked out.
 
-### ❌ What We DON'T Collect
-- Your browsing history or website URLs
-- Full webpage content (only text you select)
-- Personal information (name, email, etc.)
-- Login credentials or passwords
-- Location data or device identifiers
-- Analytics or tracking data
+Nothing else from the page is sent: not the page's other text, its web address, your browsing history, your emails or your existing calendar events. The answer that comes back is the event's title, start, end and location.
 
----
+If our AI service cannot answer, the extension sends the same request to **OpenRouter** (openrouter.ai) instead, which passes it to Google Gemini. That request is not kept in our 14-day log; OpenRouter's and Google's own privacy policies apply to it.
 
-## How We Use Your Information
+The extension uses its own built-in service key for these requests. It does not ask for, use or store an API key of yours, and it has no OpenAI or "own key" setting.
 
-### Text Processing
-- **When**: Only when you select text and click "Add to calendar"
-- **What**: Send your selected text to AI services (OpenAI or Gemini) for event extraction
-- **Duration**: Text is kept in our AI service's 14-day log (see below), then deleted automatically
-- **Result**: Event details shown for your review and editing
+### 2. Subscription check, to ExtensionPay
 
-### Settings Storage
-- **Where**: All settings stored locally in your browser only
-- **What**: Your AI provider choice, model preferences, and API keys
-- **Access**: Only you can access your settings
-- **Control**: Clear settings anytime through browser extension management
+The extension is a paid subscription with a free trial, handled by **ExtensionPay** (extensionpay.com), with payments processed by Stripe. ExtensionPay receives:
 
----
+- a random ID that the extension creates on first use (it identifies this installation, not you), and whether the extension is a development copy;
+- a request with that ID each time you click "Add to calendar", to check whether your trial or subscription is active;
+- the email address you type on ExtensionPay's trial, payment or "Already paid? Log in" page, and your trial and payment status.
 
-## Data Sharing
+Card and payment details are entered on Stripe's checkout page; the extension and the developer never see them. The developer can see your email address and subscription status in ExtensionPay. ExtensionPay never receives the text you select or your events. ExtensionPay's and Stripe's privacy policies apply to what they receive.
 
-### AI Processing Services
-We share selected text with AI providers **only when you request processing**:
+### 3. The finished event, to the calendar you choose
 
-- **OpenAI**: When you choose OpenAI as your provider
-- **Google (Gemini)**: When you choose Gemini as your provider
-- **Your Control**: Switch providers or use your own API keys anytime
+- **Google Calendar**: the extension opens Google Calendar's own "new event" page in a new window, with the title, time, location and your selected text (as the description) filled in through the page's web address. Nothing is saved until you click Save in Google Calendar, in your own Google account.
+- **Outlook**: the same, using Outlook on the web's "new event" page.
+- **.ics file**: the event is saved as a file on your computer through Chrome's download dialog. Nothing is sent.
 
-### No Other Sharing
-- ❌ We don't sell, rent, or trade your information
-- ❌ We don't share data with advertisers
-- ❌ We don't use your data for analytics or tracking
-- ❌ We don't share data with any other third parties
+The extension does not sign in to your Google account and has no access to Google Calendar's data: it cannot read, change or delete your calendars or events. It requests no Google OAuth scopes.
 
----
+## 14-day server log
 
-## Data Security and Retention
+Our AI service (aistudio.share.zrok.io) runs on the developer's own computer and passes requests to Google Gemini. For every request the extension sends to it, the service keeps a log entry with the full request and the full answer for 14 days: the text you selected, today's date, and the event details that came back. Each entry also records the time, the app and its version or the AI model used, and the country and network part of your address (never the full IP address). It never keeps API keys or passwords.
 
-### Security Measures
-- **HTTPS Only**: All communications use encrypted connections
-- **Local Storage**: Settings stored securely in your browser
-- **Limited Retention**: Selected text and the event details are kept only in the 14-day server log described below
-- **Automatic Cleanup**: Server log entries are deleted automatically after 14 days
+The log is kept only to find and fix problems and to improve the quality of results. After 14 days each entry is deleted automatically, and the log is not included in backups. Only the developer can see it, in a private dashboard behind the developer's Google sign-in. It is never sold, shared, used for advertising or used to train AI models. To have your requests deleted sooner, email tmosby137@gmail.com.
 
-### 14-day server log
+## What is stored in your browser
 
-When you add an event, the text you selected is sent to our AI service (aistudio.share.zrok.io), which runs on the developer's own computer and passes it to Google Gemini. For every request, the service keeps a log entry with the full request and the full answer for 14 days: the text you selected and the event details that came back. Each entry also records the time, the app and its version or the AI model used, and the country and network part of your address (never the full IP address). It never keeps API keys or passwords.
+The extension keeps these in Chrome's extension storage (chrome.storage) on your computer. None of it is sent to the developer:
 
-The log is kept only to find and fix problems and to improve the quality of results. After 14 days each entry is deleted automatically, and the log is not included in backups. Only the developer can see it, in a private dashboard behind the developer's Google sign-in. It is never sold, shared, used for advertising or used to train AI models. To have your log entries deleted sooner, email us at tmosby137@gmail.com.
+- **Debug log** (the latest 1,000 entries): what the extension did and any errors. Its page script notes the web address of each page it runs on, so the log includes the addresses of pages you opened recently. It also includes the first 100 characters of the text you selected (the whole text in some error entries, for example when no event was found), the event details, and your ExtensionPay email when you start a trial or pay. You can download or clear the log on the extension's options page (Debug panel), and it is removed when you uninstall the extension.
+- **Settings and counters**: the theme, whether you have finished the welcome steps, how many events you have added (used to ask for a review now and then) and whether you dismissed that request.
+- **ExtensionPay data**: the random installation ID and the last subscription status returned by ExtensionPay (including your email, if you gave one). The ExtensionPay library keeps these in chrome.storage.sync, so if Chrome sync is on, Chrome copies them to your other signed-in computers.
 
-### Your Data Rights
-- **Complete Control**: You choose what text to process
-- **Easy Deletion**: Uninstall extension to remove all data
-- **Settings Control**: Clear or modify settings anytime
-- **Provider Choice**: Switch AI providers as preferred
+## Permissions
 
----
+| Permission | Why it is needed |
+|------------|------------------|
+| contextMenus | Adds "Add to calendar" to the right-click menu |
+| activeTab, scripting | Shows the review window on the page you are on |
+| tabs | Checks that the current page can show the review window (Chrome's own pages cannot) |
+| storage | Keeps the settings, debug log and subscription status listed above |
+| windows | Opens Google Calendar or Outlook in a new window |
+| notifications | Shows short success and error messages |
+| downloads | Saves the .ics file when you choose that option |
 
-## Permissions Explanation
+Host permissions: **aistudio.share.zrok.io** (our AI service), **openrouter.ai** (fallback AI service) and **extensionpay.com** (trial and subscription). The extension's page script is loaded on all sites so that the review window can appear on whichever page you select text on. It does not read the page's content; the only page text the extension uses is the text you select and send.
 
-Our extension requests these permissions for functionality:
+## What we don't do
 
-| Permission | Purpose | Privacy Impact |
-|------------|---------|----------------|
-| **activeTab** | Read text you select | Only selected text, user-initiated |
-| **storage** | Save your preferences | Local storage only |
-| **contextMenus** | Add right-click menu | No data access |
-| **scripting** | Show confirmation dialogs | No data collection |
-| **notifications** | Display success/error messages | Extension messages only |
+- We don't sell, rent or share your data, and we don't use it for advertising.
+- We don't use analytics or tracking.
+- Nothing is sent to the AI service until you click "Add to calendar".
 
-### Host Permissions
-- **https://*.openai.com/**: Access OpenAI API for AI processing
-- **https://*.googleapis.com/**: Access Gemini API for AI processing
+## Your choices
 
----
+- Choose exactly which text to send, and edit or cancel the event before anything is saved.
+- Clear the debug log on the options page at any time. Uninstalling the extension removes what it stored in that browser.
+- Ask for your 14-day log entries to be deleted sooner, or make any other privacy request, by email.
 
-## User Controls
+## Children
 
-### What You Control
-- ✅ **Text Selection**: Choose what text to process
-- ✅ **AI Provider**: Select OpenAI or Gemini
-- ✅ **API Keys**: Use your own keys for complete control
-- ✅ **Settings**: Modify or clear all preferences
-- ✅ **Extension**: Disable or remove anytime
+This extension is not directed at children under 13, and we do not knowingly collect information from children.
 
-### How to Manage Your Data
-1. **View Settings**: Extension options page
-2. **Clear Data**: Browser extension management → Remove extension
-3. **Change Providers**: Extension options → AI Provider selection
-4. **Use Own Keys**: Extension options → Add personal API keys
+## Changes
 
----
+If this policy changes, the updated version will be posted here with a new effective date.
 
-## Compliance
+## Contact
 
-### Regulations
-- **GDPR (EU)**: Data minimization, user control, transparency
-- **CCPA (California)**: No data sale, user rights, clear purpose
-- **Chrome Web Store**: Single purpose, minimal permissions, user benefit
-
-### Children's Privacy
-This extension is not intended for children under 13. We do not knowingly collect information from children.
-
----
-
-## Contact and Updates
-
-### Privacy Questions
-For privacy-related questions or concerns, please contact us at tmosby137@gmail.com
-
-### Policy Updates
-- Check "Last Updated" date for changes
-- Significant changes communicated through extension
-- Continued use indicates acceptance of updates
-
----
-
-## Summary for Chrome Web Store Review
-
-**Data Collection**: Only user-selected text when explicitly requested for processing
-**Data Use**: Calendar event extraction only
-**Data Sharing**: Only with chosen AI provider for processing
-**Data Storage**: Local settings in your browser; requests to our AI service are kept in a private 14-day log
-**User Control**: Complete control over what data is processed and when
-**Permissions**: Minimal necessary permissions for stated functionality
-**Compliance**: GDPR, CCPA, and Chrome Web Store policy compliant
-
-**Privacy-First Design**:
-- User-initiated processing only
-- No background data collection
-- No tracking or analytics
-- Local storage of preferences
-- Server log entries deleted automatically after 14 days
-- Complete user control over all operations
-
-This extension follows privacy-by-design principles and provides clear user value while maintaining the highest standards of data protection and user privacy.
+Questions or requests: email [tmosby137@gmail.com](mailto:tmosby137@gmail.com).
