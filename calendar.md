@@ -2,6 +2,8 @@
 
 **Effective date**: 27 November 2026 (version 2.0)
 
+> Since 29 October 2026 this extension's Chrome Web Store listing delivers **NanoEvent – AI Event Creator for Google Calendar**, which has its own policy: [NanoEvent privacy policy](https://github.com/wihoho/privacy/blob/main/nano-event-privacy-policy.md). This page describes the earlier ChatGPT for Google Calendar code (version 2.0, debug log without page addresses since 27 November 2026).
+
 ## What the extension does
 
 ChatGPT for Google Calendar turns text you select on a web page into a calendar event. You select text, right-click and choose "Add to calendar". The extension sends the selected text to an AI service, which reads out the title, start and end time and location. You check and edit the event in a small window on the page, then choose Google Calendar, Outlook or an .ics file.
@@ -49,7 +51,7 @@ The log is kept only to find and fix problems and to improve the quality of resu
 
 The extension keeps these in Chrome's extension storage (chrome.storage) on your computer. None of it is sent to the developer:
 
-- **Debug log** (the latest 1,000 entries): what the extension did and any errors. Its page script notes the web address of each page it runs on, so the log includes the addresses of pages you opened recently. It also includes the first 100 characters of the text you selected (the whole text in some error entries, for example when no event was found), the event details, and your ExtensionPay email when you start a trial or pay. You can download or clear the log on the extension's options page (Debug panel), and it is removed when you uninstall the extension.
+- **Debug log** (the latest 1,000 entries): what the extension did and any errors. It never records the web addresses of the pages you visit. It includes the first 100 characters of the text you selected (the whole text in some error entries, for example when no event was found), the event details, and your ExtensionPay email when you start a trial or pay. You can download or clear the log on the extension's options page (Debug panel), and it is removed when you uninstall the extension.
 - **Settings and counters**: the theme, whether you have finished the welcome steps, how many events you have added (used to ask for a review now and then) and whether you dismissed that request.
 - **ExtensionPay data**: the random installation ID and the last subscription status returned by ExtensionPay (including your email, if you gave one). The ExtensionPay library keeps these in chrome.storage.sync, so if Chrome sync is on, Chrome copies them to your other signed-in computers.
 
