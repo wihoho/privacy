@@ -1,79 +1,15 @@
-# Privacy Policy for Reflect AI Diary
+# Daily Reflect privacy policy (formerly Reflect AI Diary)
 
-**Last updated: January 2025**
+**Last updated**: 27 November 2026
 
-## Overview
-Reflect AI Diary ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.
+This page used to hold an early draft policy for "Reflect AI Diary". That app is now **Daily Reflect** (Android, io.github.wihoho.dailyreflect), and the draft has been replaced. The current policy is here:
 
-**Developer Contact**: [YOUR_EMAIL_HERE]
-**App Package**: com.yourcompany.reflectai
+**https://wihoho.github.io/privacy/dailyreflect/privacy/**
 
-## Information We Collect
+## Summary
 
-### Personal Data You Provide
-- **Diary Entries**: Text and voice recordings you create
-- **Thoughts and Reflections**: Personal content you input
-- **Settings and Preferences**: App configuration choices
+Your thoughts, voice notes, photos and diary entries are stored on your phone. When an entry is written, that day's typed thoughts, any voice note audio not yet transcribed and resized copies of new photos are sent over HTTPS to our AI service, which runs on the developer's own computer and passes the request to Google Gemini. The service keeps the full request and answer in a 14-day server log, then deletes them automatically; the log is not in backups, only the developer can see it, and it is never sold, shared, used for advertising or used to train AI models. Each request carries a random install ID used only for a fair daily limit. Optional features send data only when you use them: a Google Doc copy in your own Drive (drive.file permission only, directly to Google), and reports of AI content (through Formspree). There are no ads, no analytics and no sale of data. Uninstalling the app deletes everything on the phone.
 
-### Automatically Collected Data
-- **Device Information**: Device type, operating system version
-- **Usage Analytics**: App performance and crash reports (anonymized)
-- **Local Storage**: Data stored locally on your device
+## Contact
 
-## How We Use Your Information
-
-### Primary Uses
-- **AI Processing**: Your diary content is sent to Google's Gemini AI service to generate insights and analysis
-- **Local Storage**: All data is primarily stored locally on your device using Isar database
-- **Markdown Export**: Optional feature to export your entries to local files
-
-### Third-Party Services
-- **Google Gemini AI**: Used for content analysis and diary entry generation
-- **Speech-to-Text**: Device-native speech recognition for voice entries
-
-## Data Storage and Security
-
-### Local Storage
-- All diary entries are stored locally on your device
-- Data is encrypted using device-level security
-- No data is stored on our servers
-
-### Cloud Processing
-- Diary content is temporarily sent to Google Gemini AI for processing
-- Google's privacy policy applies to this processing
-- We do not store copies of your data on external servers
-
-## Your Rights and Choices
-
-### Data Control
-- **Delete Data**: You can delete individual entries or all data through the app
-- **Export Data**: Export your entries to markdown files
-- **Opt-out**: Disable AI features if you prefer local-only operation
-
-### Permissions
-- **Microphone**: Required for voice-to-text diary entries (optional feature)
-- **Storage**: Required for local data storage and markdown export
-- **Internet**: Required for AI processing (can be disabled)
-
-## Data Sharing
-We do not sell, trade, or share your personal information with third parties except:
-- **Google Gemini AI**: For diary analysis (as described above)
-- **Legal Requirements**: If required by law or to protect our rights
-
-## Children's Privacy
-This app is not intended for children under 13. We do not knowingly collect personal information from children under 13.
-
-## Changes to This Policy
-We may update this Privacy Policy periodically. We will notify users of significant changes through the app.
-
-## Contact Us
-If you have questions about this Privacy Policy, contact us at:
-- Email: [YOUR_EMAIL]
-- Website: [YOUR_WEBSITE]
-
-## Compliance
-This policy complies with:
-- Google Play Store requirements
-- GDPR (General Data Protection Regulation)
-- CCPA (California Consumer Privacy Act)
-- Other applicable privacy laws
+Questions, or to have your requests deleted from the log sooner: email [tmosby137@gmail.com](mailto:tmosby137@gmail.com).
