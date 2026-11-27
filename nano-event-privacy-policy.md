@@ -1,6 +1,6 @@
 # Privacy Policy for NanoEvent
 
-**Last Updated**: November 17, 2026
+**Last Updated**: November 27, 2026
 
 ## Overview
 
@@ -21,7 +21,13 @@ NanoEvent reads event details with a cloud AI model (Google Gemini). When you ru
 1. The content described above is sent over HTTPS to the developer's AI server (`aistudio.share.zrok.io`), which passes it to the AI model and returns the event details.
 2. If that server is unavailable, the same request is sent to **OpenRouter** (`openrouter.ai`), which routes it to a Google Gemini model. OpenRouter's handling is covered by its own privacy policy: https://openrouter.ai/privacy
 
-Your content is used only to return the event details and to check and improve how well NanoEvent reads them. To do that, the developer's AI server keeps the request text (images are not kept) and the answer for up to 14 days, after which they are deleted automatically. It is not linked to any account or identifier for you, and it is not used for advertising or any other purpose.
+Your content is used only to return the event details and to check and improve how well NanoEvent reads them. To do that, the developer's AI server keeps the full request, including any image you selected or cropped, and the answer for 14 days, after which they are deleted automatically (see the 14-day server log below). It is not linked to any account, and it is not used for advertising or any other purpose.
+
+### 14-day server log
+
+The developer's AI server runs on the developer's own computer. For every extraction it keeps a log entry with the full request and the full answer for 14 days: the text you selected or pasted with its page title, host, language and surrounding text, any image you selected or cropped, and the event details that came back. Each entry also records the time, the app and its version or the AI model used, and the country and network part of your address (never the full IP address). It never keeps API keys or passwords.
+
+The log is kept only to find and fix problems and to improve the quality of results. After 14 days each entry is deleted automatically, and the log is not included in backups. Only the developer can see it, in a private dashboard behind the developer's Google sign-in. It is never sold, shared, used for advertising or used to train AI models. To have your log entries deleted sooner, open an issue at https://github.com/wihoho/privacy/issues.
 
 ## Anonymous usage counts
 
