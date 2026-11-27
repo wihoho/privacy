@@ -30,7 +30,7 @@ Our AI service runs on the developer's own computer. For every request the app s
 The log is kept only to find and fix problems and to improve the quality of results. After 14 days each entry is deleted automatically, and the log is not included in backups. Only the developer can see it, in a private dashboard behind the developer's Google sign-in. It is never sold, shared, used for advertising or used to train AI models. To have your requests deleted sooner, email tmosby137@gmail.com.
 
 ## What We Don't Do
-- No user accounts or sign-in.
+- No Daily Reflect account. Google sign-in is used only if you turn on the optional Google Doc copy.
 - No advertising, and no analytics or tracking SDKs.
 - No sale of personal data.
 
